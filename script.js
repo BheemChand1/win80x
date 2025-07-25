@@ -366,8 +366,8 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       try {
-        // Send AJAX request to the new Composer-based handler
-        const response = await fetch("contact-form.php", {
+        // Send AJAX request to the simple mail handler (temporary fix)
+        const response = await fetch("contact-form-simple.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

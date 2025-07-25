@@ -10,6 +10,14 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST');
 header('Access-Control-Allow-Headers: Content-Type');
 
+// Include PHPMailer classes if available
+if (file_exists('vendor/autoload.php')) {
+    require_once 'vendor/autoload.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\SMTP;
+    use PHPMailer\PHPMailer\Exception;
+}
+
 // Only allow POST requests
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -82,12 +90,7 @@ $error_details = '';
 // Method 1: Try SMTP with PHPMailer
 if (file_exists('vendor/autoload.php') && file_exists('config.php')) {
     try {
-        require_once 'vendor/autoload.php';
         $config = require_once 'config.php';
-        
-        use PHPMailer\PHPMailer\PHPMailer;
-        use PHPMailer\PHPMailer\SMTP;
-        use PHPMailer\PHPMailer\Exception;
         
         $mail = new PHPMailer(true);
         
