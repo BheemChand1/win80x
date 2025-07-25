@@ -8,6 +8,98 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+
+    <!-- Mobile Responsive Styles -->
+    <style>
+        /* Mobile-first responsive design */
+        .payment-method-card {
+            margin-bottom: 1rem;
+        }
+
+        .payment-method-card .fs-2 {
+            font-size: 2.5rem !important;
+        }
+
+        @media (max-width: 768px) {
+            .display-4 {
+                font-size: 2rem !important;
+            }
+
+            .lead {
+                font-size: 1rem !important;
+            }
+
+            .card-body {
+                padding: 1.5rem !important;
+            }
+
+            .payment-method-card {
+                padding: 1rem !important;
+                margin-bottom: 1.5rem;
+            }
+
+            .payment-method-card .fs-2 {
+                font-size: 2rem !important;
+            }
+
+            .token-pricing-card {
+                margin-top: 2rem;
+            }
+
+            .limit-card {
+                font-size: 0.9rem;
+            }
+
+            .support-contact {
+                margin-bottom: 2rem;
+            }
+
+            .support-contact .fs-2 {
+                font-size: 2rem !important;
+            }
+
+            .security-badges .badge {
+                font-size: 0.8rem;
+                padding: 0.4rem 0.6rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            .display-4 {
+                font-size: 1.8rem !important;
+                line-height: 1.2;
+            }
+
+            .card-body {
+                padding: 1rem !important;
+            }
+
+            .payment-method-card {
+                padding: 0.8rem !important;
+            }
+
+            .payment-method-card h5 {
+                font-size: 1rem;
+            }
+
+            .payment-method-card .fs-2 {
+                font-size: 1.8rem !important;
+            }
+
+            .token-pricing-card h4 {
+                font-size: 1.2rem;
+            }
+
+            .support-contact .fs-2 {
+                font-size: 1.8rem !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -32,87 +124,98 @@
     <section class="py-5 mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-center mb-5">
-                        <h1 class="display-4 fw-bold mb-4">Payment & Withdrawal Policy</h1>
-                        <p class="lead">Transparent and secure payment processing for Win80x platform</p>
-                        <p class="text-muted">Last updated: January 2025</p>
+                <div class="col-12">
+                    <div class="text-center mb-4 mb-md-5">
+                        <h1 class="display-4 fw-bold mb-3 mb-md-4">Payment & Withdrawal Policy</h1>
+                        <p class="lead mb-2">Transparent and secure payment processing for Win80x platform</p>
+                        <p class="text-muted mb-0">Last updated: January 2025</p>
                     </div>
                 </div>
             </div>
 
             <!-- Payment Methods -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-12">
+            <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                <div class="col-12">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">
-                                <i class="bi bi-credit-card text-primary me-3"></i>Accepted Payment Methods
+                        <div class="card-body p-3 p-md-5">
+                            <h3 class="fw-bold mb-3 mb-md-4">
+                                <i class="bi bi-credit-card text-primary me-2 me-md-3"></i>Accepted Payment Methods
                             </h3>
-                            <p class="mb-4">We accept the following payment methods for token purchases:</p>
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="payment-method-card p-4 border rounded">
+                            <p class="mb-3 mb-md-4">We accept the following payment methods for token purchases:</p>
+                            <div class="row g-3 g-md-4">
+                                <div class="col-12 col-md-6">
+                                    <div class="payment-method-card p-3 p-md-4 border rounded">
                                         <div class="d-flex align-items-center mb-3">
                                             <i class="bi bi-credit-card-2-front text-primary fs-2 me-3"></i>
                                             <div>
                                                 <h5 class="fw-semibold mb-1">Debit/Credit Cards</h5>
-                                                <p class="text-muted mb-0">Visa, Mastercard, RuPay</p>
+                                                <p class="text-muted mb-0 small">Visa, Mastercard, RuPay</p>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled small">
-                                            <li><i class="bi bi-check text-success me-2"></i>Instant Processing</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>Secure 3D Authentication
-                                            </li>
-                                            <li><i class="bi bi-check text-success me-2"></i>No Extra Charges</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Instant
+                                                Processing</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Secure 3D
+                                                Authentication</li>
+                                            <li class="mb-0"><i class="bi bi-check text-success me-2"></i>No Extra
+                                                Charges</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="payment-method-card p-4 border rounded">
+                                <div class="col-12 col-md-6">
+                                    <div class="payment-method-card p-3 p-md-4 border rounded">
                                         <div class="d-flex align-items-center mb-3">
                                             <i class="bi bi-bank text-primary fs-2 me-3"></i>
                                             <div>
                                                 <h5 class="fw-semibold mb-1">Net Banking</h5>
-                                                <p class="text-muted mb-0">All Major Indian Banks</p>
+                                                <p class="text-muted mb-0 small">All Major Indian Banks</p>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled small">
-                                            <li><i class="bi bi-check text-success me-2"></i>Direct Bank Transfer</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>High Security</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>Real-time Processing</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Direct Bank
+                                                Transfer</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>High Security
+                                            </li>
+                                            <li class="mb-0"><i class="bi bi-check text-success me-2"></i>Real-time
+                                                Processing</li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="payment-method-card p-4 border rounded">
+                                <div class="col-12 col-md-6">
+                                    <div class="payment-method-card p-3 p-md-4 border rounded">
                                         <div class="d-flex align-items-center mb-3">
                                             <i class="bi bi-phone text-primary fs-2 me-3"></i>
                                             <div>
                                                 <h5 class="fw-semibold mb-1">UPI Payments</h5>
-                                                <p class="text-muted mb-0">PhonePe, GPay, Paytm, BHIM</p>
+                                                <p class="text-muted mb-0 small">PhonePe, GPay, Paytm, BHIM</p>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled small">
-                                            <li><i class="bi bi-check text-success me-2"></i>Instant Transfer</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>Mobile Friendly</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>24/7 Available</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Instant
+                                                Transfer</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Mobile
+                                                Friendly</li>
+                                            <li class="mb-0"><i class="bi bi-check text-success me-2"></i>24/7 Available
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="payment-method-card p-4 border rounded">
+                                <div class="col-12 col-md-6">
+                                    <div class="payment-method-card p-3 p-md-4 border rounded">
                                         <div class="d-flex align-items-center mb-3">
                                             <i class="bi bi-wallet2 text-primary fs-2 me-3"></i>
                                             <div>
                                                 <h5 class="fw-semibold mb-1">Digital Wallets</h5>
-                                                <p class="text-muted mb-0">Paytm, PhonePe, Amazon Pay</p>
+                                                <p class="text-muted mb-0 small">Paytm, PhonePe, Amazon Pay</p>
                                             </div>
                                         </div>
                                         <ul class="list-unstyled small">
-                                            <li><i class="bi bi-check text-success me-2"></i>Quick Payments</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>Cashback Offers</li>
-                                            <li><i class="bi bi-check text-success me-2"></i>Easy Refunds</li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Quick Payments
+                                            </li>
+                                            <li class="mb-1"><i class="bi bi-check text-success me-2"></i>Cashback
+                                                Offers</li>
+                                            <li class="mb-0"><i class="bi bi-check text-success me-2"></i>Easy Refunds
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -123,17 +226,17 @@
             </div>
 
             <!-- Token Purchase Policy -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-12">
+            <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                <div class="col-12">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">
-                                <i class="bi bi-coin text-primary me-3"></i>Token Purchase Policy
+                        <div class="card-body p-3 p-md-5">
+                            <h3 class="fw-bold mb-3 mb-md-4">
+                                <i class="bi bi-coin text-primary me-2 me-md-3"></i>Token Purchase Policy
                             </h3>
-                            <div class="row g-4">
-                                <div class="col-md-8">
+                            <div class="row g-3 g-md-4">
+                                <div class="col-12 col-lg-8">
                                     <h5 class="fw-semibold mb-3">Token Pricing</h5>
-                                    <ul class="list-unstyled mb-4">
+                                    <ul class="list-unstyled mb-3 mb-md-4">
                                         <li class="mb-2"><i class="bi bi-dot text-primary me-2"></i>Each gaming token
                                             costs ₹100</li>
                                         <li class="mb-2"><i class="bi bi-dot text-primary me-2"></i>Minimum purchase: 1
@@ -145,16 +248,16 @@
                                     </ul>
 
                                     <h5 class="fw-semibold mb-3">Purchase Process</h5>
-                                    <ol class="mb-4">
+                                    <ol class="mb-0">
                                         <li class="mb-2">Select number of tokens to purchase</li>
                                         <li class="mb-2">Choose your preferred payment method</li>
                                         <li class="mb-2">Complete secure payment through Razorpay</li>
                                         <li class="mb-2">Tokens are instantly credited to your account</li>
-                                        <li class="mb-2">Start playing games immediately</li>
+                                        <li class="mb-0">Start playing games immediately</li>
                                     </ol>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="token-pricing-card bg-light p-4 rounded">
+                                <div class="col-12 col-lg-4">
+                                    <div class="token-pricing-card bg-light p-3 p-md-4 rounded">
                                         <div class="text-center mb-3">
                                             <i class="bi bi-coin display-4 text-primary"></i>
                                         </div>
@@ -186,17 +289,17 @@
             </div>
 
             <!-- Withdrawal Policy -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-12">
+            <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                <div class="col-12">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">
-                                <i class="bi bi-cash-stack text-primary me-3"></i>Withdrawal Policy
+                        <div class="card-body p-3 p-md-5">
+                            <h3 class="fw-bold mb-3 mb-md-4">
+                                <i class="bi bi-cash-stack text-primary me-2 me-md-3"></i>Withdrawal Policy
                             </h3>
-                            <div class="row g-4">
-                                <div class="col-md-6">
+                            <div class="row g-3 g-md-4">
+                                <div class="col-12 col-md-6">
                                     <h5 class="fw-semibold mb-3">Withdrawal Methods</h5>
-                                    <ul class="list-unstyled mb-4">
+                                    <ul class="list-unstyled mb-3 mb-md-4">
                                         <li class="mb-2">
                                             <i class="bi bi-bank text-success me-2"></i>
                                             <strong>Bank Transfer (IMPS/NEFT)</strong>
@@ -210,16 +313,16 @@
                                     </ul>
 
                                     <h5 class="fw-semibold mb-3">Processing Time</h5>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-clock text-primary me-2"></i>UPI: Instant to 30
                                             minutes</li>
                                         <li class="mb-2"><i class="bi bi-clock text-primary me-2"></i>IMPS: 30 minutes
                                             to 2 hours</li>
-                                        <li class="mb-2"><i class="bi bi-clock text-primary me-2"></i>NEFT: 2-4 hours
+                                        <li class="mb-0"><i class="bi bi-clock text-primary me-2"></i>NEFT: 2-4 hours
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12 col-md-6">
                                     <h5 class="fw-semibold mb-3">Withdrawal Limits</h5>
                                     <div class="limit-card bg-light p-3 rounded mb-3">
                                         <div class="d-flex justify-content-between mb-2">
@@ -237,12 +340,12 @@
                                     </div>
 
                                     <h5 class="fw-semibold mb-3">Withdrawal Charges</h5>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>UPI: Free
                                         </li>
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>IMPS: Free
                                         </li>
-                                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>NEFT: Free
+                                        <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>NEFT: Free
                                         </li>
                                     </ul>
                                 </div>
@@ -253,17 +356,17 @@
             </div>
 
             <!-- Security & Compliance -->
-            <div class="row g-4 mb-5">
-                <div class="col-lg-12">
+            <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                <div class="col-12">
                     <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <h3 class="fw-bold mb-4">
-                                <i class="bi bi-shield-check text-primary me-3"></i>Security & Compliance
+                        <div class="card-body p-3 p-md-5">
+                            <h3 class="fw-bold mb-3 mb-md-4">
+                                <i class="bi bi-shield-check text-primary me-2 me-md-3"></i>Security & Compliance
                             </h3>
-                            <div class="row g-4">
-                                <div class="col-md-6">
+                            <div class="row g-3 g-md-4">
+                                <div class="col-12 col-md-6">
                                     <h5 class="fw-semibold mb-3">Payment Security</h5>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>256-bit SSL
                                             encryption</li>
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>PCI DSS
@@ -272,13 +375,13 @@
                                             authentication</li>
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Fraud
                                             detection system</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Secure
+                                        <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>Secure
                                             tokenization</li>
                                     </ul>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-12 col-md-6">
                                     <h5 class="fw-semibold mb-3">Regulatory Compliance</h5>
-                                    <ul class="list-unstyled">
+                                    <ul class="list-unstyled mb-0">
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>RBI
                                             guidelines compliant</li>
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>KYC
@@ -287,7 +390,7 @@
                                             laundering (AML)</li>
                                         <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Transaction
                                             monitoring</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Regular
+                                        <li class="mb-0"><i class="bi bi-check-circle text-success me-2"></i>Regular
                                             security audits</li>
                                     </ul>
                                 </div>
@@ -341,37 +444,38 @@
             </div>
 
             <!-- Contact for Payment Issues -->
-            <div class="row g-4">
-                <div class="col-lg-12">
+            <div class="row g-3 g-md-4 mb-4 mb-md-5">
+                <div class="col-12">
                     <div class="card border-0 shadow-sm bg-light">
-                        <div class="card-body p-5 text-center">
-                            <h3 class="fw-bold mb-4">
-                                <i class="bi bi-headset text-primary me-3"></i>Payment Support
+                        <div class="card-body p-3 p-md-5 text-center">
+                            <h3 class="fw-bold mb-3 mb-md-4">
+                                <i class="bi bi-headset text-primary me-2 me-md-3"></i>Payment Support
                             </h3>
-                            <p class="lead mb-4">Need help with payments or withdrawals? Our support team is here to
+                            <p class="lead mb-3 mb-md-4">Need help with payments or withdrawals? Our support team is
+                                here to
                                 assist you.</p>
-                            <div class="row g-4">
-                                <div class="col-md-4">
-                                    <div class="support-contact">
-                                        <i class="bi bi-envelope-fill text-primary fs-2 mb-3"></i>
-                                        <h5 class="fw-semibold">Email Support</h5>
-                                        <p class="mb-0">payments@win80x.com</p>
+                            <div class="row g-3 g-md-4">
+                                <div class="col-12 col-md-4">
+                                    <div class="support-contact p-2 p-md-3">
+                                        <i class="bi bi-envelope-fill text-primary fs-3 fs-md-2 mb-2 mb-md-3"></i>
+                                        <h5 class="fw-semibold mb-2">Email Support</h5>
+                                        <p class="mb-1">payments@win80x.com</p>
                                         <small class="text-muted">Response within 4 hours</small>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="support-contact">
-                                        <i class="bi bi-telephone-fill text-primary fs-2 mb-3"></i>
-                                        <h5 class="fw-semibold">Phone Support</h5>
-                                        <p class="mb-0">+91 7536007536</p>
+                                <div class="col-12 col-md-4">
+                                    <div class="support-contact p-2 p-md-3">
+                                        <i class="bi bi-telephone-fill text-primary fs-3 fs-md-2 mb-2 mb-md-3"></i>
+                                        <h5 class="fw-semibold mb-2">Phone Support</h5>
+                                        <p class="mb-1">+91 7536007536</p>
                                         <small class="text-muted">24/7 Available</small>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="support-contact">
-                                        <i class="bi bi-chat-dots-fill text-primary fs-2 mb-3"></i>
-                                        <h5 class="fw-semibold">Live Chat</h5>
-                                        <p class="mb-0">In-app chat support</p>
+                                <div class="col-12 col-md-4">
+                                    <div class="support-contact p-2 p-md-3">
+                                        <i class="bi bi-chat-dots-fill text-primary fs-3 fs-md-2 mb-2 mb-md-3"></i>
+                                        <h5 class="fw-semibold mb-2">Live Chat</h5>
+                                        <p class="mb-1">In-app chat support</p>
                                         <small class="text-muted">Instant response</small>
                                     </div>
                                 </div>
@@ -385,14 +489,15 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
+    <footer class="bg-dark text-white py-4 py-md-5 mt-4 mt-md-5">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="fw-bold mb-3">
+            <div class="row g-3 g-md-4">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <h5 class="fw-bold mb-2 mb-md-3">
                         <i class="bi bi-controller me-2"></i>Win80x Technologies
                     </h5>
-                    <p class="mb-3">Secure payment processing with RBI compliance and industry-standard security
+                    <p class="mb-2 mb-md-3 small">Secure payment processing with RBI compliance and industry-standard
+                        security
                         measures.</p>
                     <div class="payment-security">
                         <small class="d-block mb-1"><i class="bi bi-shield-check me-2"></i>256-bit SSL
@@ -401,31 +506,36 @@
                         <small class="d-block"><i class="bi bi-bank me-2"></i>RBI Guidelines Compliant</small>
                     </div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h6 class="fw-bold mb-3">Payment Methods</h6>
-                            <ul class="list-unstyled">
-                                <li><small class="text-light"><i class="bi bi-credit-card me-2"></i>Credit/Debit
+                <div class="col-12 col-lg-8">
+                    <div class="row g-3 g-md-4">
+                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                            <h6 class="fw-bold mb-2 mb-md-3">Payment Methods</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><small class="text-light"><i
+                                            class="bi bi-credit-card me-2"></i>Credit/Debit
                                         Cards</small></li>
-                                <li><small class="text-light"><i class="bi bi-phone me-2"></i>UPI Payments</small></li>
-                                <li><small class="text-light"><i class="bi bi-bank me-2"></i>Net Banking</small></li>
-                                <li><small class="text-light"><i class="bi bi-wallet2 me-2"></i>Digital Wallets</small>
+                                <li class="mb-1"><small class="text-light"><i class="bi bi-phone me-2"></i>UPI
+                                        Payments</small></li>
+                                <li class="mb-1"><small class="text-light"><i class="bi bi-bank me-2"></i>Net
+                                        Banking</small></li>
+                                <li class="mb-0"><small class="text-light"><i class="bi bi-wallet2 me-2"></i>Digital
+                                        Wallets</small>
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
-                            <h6 class="fw-bold mb-3">Support</h6>
-                            <ul class="list-unstyled">
-                                <li><a href="mailto:payments@win80x.com"
+                        <div class="col-12 col-md-4 mb-3 mb-md-0">
+                            <h6 class="fw-bold mb-2 mb-md-3">Support</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1"><a href="mailto:payments@win80x.com"
                                         class="text-light text-decoration-none small">payments@win80x.com</a></li>
-                                <li><a href="tel:+917536007536" class="text-light text-decoration-none small">+91
+                                <li class="mb-1"><a href="tel:+917536007536"
+                                        class="text-light text-decoration-none small">+91
                                         7536007536</a></li>
-                                <li><small class="text-light">24/7 Payment Support</small></li>
+                                <li class="mb-0"><small class="text-light">24/7 Payment Support</small></li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
-                            <h6 class="fw-bold mb-3">Security</h6>
+                        <div class="col-12 col-md-4">
+                            <h6 class="fw-bold mb-2 mb-md-3">Security</h6>
                             <div class="security-badges">
                                 <span class="badge bg-success mb-1 d-block">
                                     <i class="bi bi-shield-lock me-1"></i>Secure Payments
@@ -433,7 +543,7 @@
                                 <span class="badge bg-primary mb-1 d-block">
                                     <i class="bi bi-check-circle me-1"></i>Verified Gateway
                                 </span>
-                                <span class="badge bg-warning text-dark mb-1 d-block">
+                                <span class="badge bg-warning text-dark mb-0 d-block">
                                     <i class="bi bi-eye-slash me-1"></i>Data Protected
                                 </span>
                             </div>
@@ -441,9 +551,9 @@
                     </div>
                 </div>
             </div>
-            <hr class="my-4">
+            <hr class="my-3 my-md-4">
             <div class="text-center">
-                <p class="mb-0">&copy; 2025 Win80x Technologies Private Limited. All rights reserved.</p>
+                <p class="mb-1 small">&copy; 2025 Win80x Technologies Private Limited. All rights reserved.</p>
                 <p class="mb-0 small text-muted">Secure payments powered by Razorpay | RBI Compliant Platform | GST:
                     05XXXXX0000X1ZX</p>
             </div>
