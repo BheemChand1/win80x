@@ -381,7 +381,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (result.success === true) {
           // Success - show success message and reset form
-          showAlert("success", "Message Sent Successfully!", "Thank you for your message. We'll get back to you within 24 hours.");
+          showAlert(
+            "success",
+            "Message Sent Successfully!",
+            "Thank you for your message. We'll get back to you within 24 hours."
+          );
           contactForm.reset();
 
           // Clear validation classes

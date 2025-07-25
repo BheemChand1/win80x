@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="container mt-5">
         <div class="row">
@@ -34,35 +36,41 @@
                                 <div class="row g-4">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" required>
+                                            <input type="text" class="form-control" id="firstName" name="firstName"
+                                                placeholder="First Name" required>
                                             <label for="firstName">First Name *</label>
                                             <div class="invalid-feedback"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" required>
+                                            <input type="text" class="form-control" id="lastName" name="lastName"
+                                                placeholder="Last Name" required>
                                             <label for="lastName">Last Name *</label>
                                             <div class="invalid-feedback"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" required>
+                                            <input type="email" class="form-control" id="email" name="email"
+                                                placeholder="Email Address" required>
                                             <label for="email">Email Address *</label>
                                             <div class="invalid-feedback"></div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9+\-\s\(\)]+">
+                                            <input type="tel" class="form-control" id="phone" name="phone"
+                                                placeholder="Phone Number" pattern="[0-9+\-\s\(\)]+">
                                             <label for="phone">Phone Number</label>
                                             <div class="invalid-feedback"></div>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required minlength="10" maxlength="1000"></textarea>
+                                            <textarea class="form-control" id="message" name="message"
+                                                placeholder="Your Message" style="height: 150px" required minlength="10"
+                                                maxlength="1000"></textarea>
                                             <label for="message">Your Message *</label>
                                             <div class="invalid-feedback"></div>
                                             <div class="form-text">
@@ -74,16 +82,20 @@
                                     </div>
                                     <div class="col-12">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" id="privacy" name="privacy" required>
+                                            <input class="form-check-input" type="checkbox" id="privacy" name="privacy"
+                                                required>
                                             <label class="form-check-label text-muted" for="privacy">
-                                                I agree to the <a href="privacy-policy.html" class="text-primary" target="_blank">Privacy Policy</a>
-                                                and <a href="terms-and-conditions.html" class="text-primary" target="_blank">Terms & Conditions</a> *
+                                                I agree to the <a href="privacy-policy.html" class="text-primary"
+                                                    target="_blank">Privacy Policy</a>
+                                                and <a href="terms-and-conditions.html" class="text-primary"
+                                                    target="_blank">Terms & Conditions</a> *
                                             </label>
                                             <div class="invalid-feedback"></div>
                                         </div>
                                     </div>
                                     <div class="col-12 text-center">
-                                        <button type="submit" id="submitBtn" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                                        <button type="submit" id="submitBtn"
+                                            class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
                                             <span id="submitText">
                                                 <i class="bi bi-send me-2"></i>Send Message
                                             </span>
@@ -107,5 +119,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
 </script>
