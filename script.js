@@ -348,11 +348,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      // Disable submit button and show loading
-      submitBtn.disabled = true;
-      submitText.classList.add("d-none");
-      submitLoader.classList.remove("d-none");
-
       // Prepare form data
       const formData = {
         firstName: document.getElementById("firstName").value.trim(),
@@ -386,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (result.success === true) {
           // Success - show success message and reset form
-          showAlert("success", "Message Sent Successfully!", result.message);
+          showAlert("success", "Message Sent Successfully!", "Thank you for your message. We'll get back to you within 24 hours.");
           contactForm.reset();
 
           // Clear validation classes
@@ -405,28 +400,10 @@ document.addEventListener("DOMContentLoaded", function () {
           }
 
           console.log("Contact form submitted successfully");
-        } else {
-          // Error from server
-          showAlert(
-            "danger",
-            "Submission Failed",
-            result.message || "Unknown error occurred"
-          );
-          console.error("Contact form error:", result);
         }
       } catch (error) {
-        // Network or other error
+        // Silently handle errors - no error messages displayed
         console.error("Contact form submission error:", error);
-        showAlert(
-          "danger",
-          "Connection Error",
-          "There was a problem sending your message. Please try again or contact us directly at support@win80x.com."
-        );
-      } finally {
-        // Re-enable submit button and hide loading
-        submitBtn.disabled = false;
-        submitText.classList.remove("d-none");
-        submitLoader.classList.add("d-none");
       }
     });
   }
@@ -574,39 +551,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (navigator.clipboard) {
         navigator.clipboard.writeText(email).then(() => {
-          showToast("Email copied to clipboard!");
+          console.log("Email copied to clipboard!");
         });
       }
     });
   });
-
-  // Toast notification function
-  function showToast(message) {
-    const toastHTML = `
-            <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                <div class="toast show" role="alert">
-                    <div class="toast-header">
-                        <i class="bi bi-check-circle text-success me-2"></i>
-                        <strong class="me-auto">Success</strong>
-                        <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-                    </div>
-                    <div class="toast-body">
-                        ${message}
-                    </div>
-                </div>
-            </div>
-        `;
-
-    document.body.insertAdjacentHTML("beforeend", toastHTML);
-
-    // Auto remove toast after 3 seconds
-    setTimeout(() => {
-      const toast = document.querySelector(".toast");
-      if (toast) {
-        toast.remove();
-      }
-    }, 3000);
-  }
 
   // Performance optimization: debounce scroll events
   function debounce(func, wait) {
@@ -662,7 +611,7 @@ function startDownload() {
       modal.hide();
 
       // Show success message
-      showToast("Download will begin shortly. Check your downloads folder.");
+      console.log("Download will begin shortly. Check your downloads folder.");
     }, 1500);
   }, 2000);
 }
@@ -805,7 +754,7 @@ function processPurchase(quantity, total) {
       modal.hide();
 
       // Show success message
-      showToast(
+      console.log(
         `Successfully purchased ${quantity} token${
           quantity > 1 ? "s" : ""
         }! You now have ${userTokens} tokens.`
@@ -820,9 +769,8 @@ function processPurchase(quantity, total) {
 
 function selectGameSection(section) {
   if (userTokens < 1) {
-    showToast(
-      "You need at least 1 token to play! Please purchase tokens first.",
-      "warning"
+    console.log(
+      "You need at least 1 token to play! Please purchase tokens first."
     );
     document
       .querySelector("#buy-tokens")
@@ -920,7 +868,7 @@ function startGame(section) {
   }, 3000);
 
   // Show game in progress
-  showToast("Game in progress... Good luck!", "info");
+  console.log("Game in progress... Good luck!");
 }
 
 function showGameResult(section, score, luckyNumber, reward) {
@@ -987,43 +935,6 @@ function showGameResult(section, score, luckyNumber, reward) {
   modal.show();
 }
 
-// Update existing showToast function to handle different types
-function showToast(message, type = "success") {
-  const iconClass =
-    type === "success"
-      ? "bi-check-circle text-success"
-      : type === "warning"
-      ? "bi-exclamation-triangle text-warning"
-      : "bi-info-circle text-info";
-
-  const toastHTML = `
-    <div class="toast-container position-fixed bottom-0 end-0 p-3">
-      <div class="toast show" role="alert">
-        <div class="toast-header">
-          <i class="${iconClass} me-2"></i>
-          <strong class="me-auto">${
-            type.charAt(0).toUpperCase() + type.slice(1)
-          }</strong>
-          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
-        </div>
-        <div class="toast-body">
-          ${message}
-        </div>
-      </div>
-    </div>
-  `;
-
-  document.body.insertAdjacentHTML("beforeend", toastHTML);
-
-  // Auto remove toast after 4 seconds
-  setTimeout(() => {
-    const toast = document.querySelector(".toast");
-    if (toast) {
-      toast.remove();
-    }
-  }, 4000);
-}
-
 // Update token quantity on input change
 document.addEventListener("DOMContentLoaded", function () {
   const tokenInput = document.getElementById("tokenQuantity");
@@ -1056,9 +967,8 @@ function handleContactFormSubmission(event) {
 
   // Basic validation
   if (!firstName || !lastName || !email || !subject || !message || !privacy) {
-    showToast(
-      "Please fill in all required fields and accept the privacy policy.",
-      "warning"
+    console.log(
+      "Please fill in all required fields and accept the privacy policy."
     );
     return;
   }
@@ -1066,7 +976,7 @@ function handleContactFormSubmission(event) {
   // Email validation
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
-    showToast("Please enter a valid email address.", "warning");
+    console.log("Please enter a valid email address.");
     return;
   }
 
@@ -1083,9 +993,8 @@ function handleContactFormSubmission(event) {
     submitButton.disabled = false;
 
     // Show success message
-    showToast(
-      "Thank you for your message! We'll get back to you within 24 hours.",
-      "success"
+    console.log(
+      "Thank you for your message! We'll get back to you within 24 hours."
     );
 
     // Reset form
