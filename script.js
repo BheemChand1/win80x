@@ -366,8 +366,8 @@ document.addEventListener("DOMContentLoaded", function () {
       };
 
       try {
-        // Send AJAX request to the simple mail handler (temporary fix)
-        const response = await fetch("contact-form-simple.php", {
+        // Send AJAX request to the contact form handler
+        const response = await fetch("contact-handler.php", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
