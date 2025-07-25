@@ -375,9 +375,16 @@ document.addEventListener("DOMContentLoaded", function () {
           body: JSON.stringify(formData),
         });
 
-        const result = await response.json();
+        // Check response status
+        if (!response.ok) {
+          throw new Error(`Server error: ${response.status}`);
+        }
 
-        if (result.success) {
+        // Parse JSON response
+        const result = await response.json();
+        console.log("Form submission result:", result);
+
+        if (result.success === true) {
           // Success - show success message and reset form
           showAlert("success", "Message Sent Successfully!", result.message);
           contactForm.reset();
@@ -394,13 +401,17 @@ document.addEventListener("DOMContentLoaded", function () {
               "text-warning",
               "text-danger"
             );
+            messageCounter.parentElement.classList.add("text-muted");
           }
 
-          // Log successful submission (optional)
-          console.log("Contact form submitted successfully:", result.data);
+          console.log("Contact form submitted successfully");
         } else {
           // Error from server
-          showAlert("danger", "Submission Failed", result.message);
+          showAlert(
+            "danger",
+            "Submission Failed",
+            result.message || "Unknown error occurred"
+          );
           console.error("Contact form error:", result);
         }
       } catch (error) {
@@ -409,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function () {
         showAlert(
           "danger",
           "Connection Error",
-          "There was a problem connecting to the server. Please check your internet connection and try again."
+          "There was a problem sending your message. Please try again or contact us directly at support@win80x.com."
         );
       } finally {
         // Re-enable submit button and hide loading

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Form Test</title>
+</head>
+
+<body>
+    <h2>Contact Form Response Test</h2>
+    <div id="result"></div>
+
+    <script>
+        async function testContactForm() {
+            const testData = {
+                firstName: "Test",
+                lastName: "User",
+                email: "test@example.com",
+                phone: "1234567890",
+                message: "This is a test message from the contact form test script.",
+                privacy: true,
+                timestamp: new Date().toISOString(),
+                userAgent: navigator.userAgent
+            };
+
+            try {
+                console.log("Sending test data:", testData);
+
+                const response = await fetch("contact-handler-clean.php", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(testData),
+                });
+
+                console.log("Response status:", response.status);
+                console.log("Response headers:", response.headers);
+
+                const responseText = await response.text();
+                console.log("Raw response:", responseText);
+
+                try {
+                    const result = JSON.parse(responseText);
+                    console.log("Parsed result:", result);
+
+                    document.getElementById('result').innerHTML = `
+                    <h3>Test Result:</h3>
+                    <p><strong>Success:</strong> ${result.success}</p>
+                    <p><strong>Message:</strong> ${result.message}</p>
+                    <p><strong>Raw Response:</strong> <pre>${responseText}</pre></p>
+                `;
+                } catch (parseError) {
+                    console.error("JSON parse error:", parseError);
+                    document.getElementById('result').innerHTML = `
+                    <h3>JSON Parse Error:</h3>
+                    <p><strong>Error:</strong> ${parseError.message}</p>
+                    <p><strong>Raw Response:</strong> <pre>${responseText}</pre></p>
+                `;
+                }
+
+            } catch (error) {
+                console.error("Fetch error:", error);
+                document.getElementById('result').innerHTML = `
+                <h3>Fetch Error:</h3>
+                <p><strong>Error:</strong> ${error.message}</p>
+            `;
+            }
+        }
+
+        // Run test when page loads
+        testContactForm();
+    </script>
+</body>
+
+</html>
