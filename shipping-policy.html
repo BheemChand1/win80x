@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Policy - Win80x</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        .shipping-list {
+            padding-left: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .shipping-list li {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+        
+        .shipping-section {
+            transition: all 0.3s ease;
+            border-radius: 12px;
+            padding: 1rem;
+        }
+        
+        .shipping-section:hover {
+            background-color: rgba(102, 126, 234, 0.02);
+        }
+        
+        .section-number .badge {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        .icon-wrapper i {
+            font-size: 2rem;
+        }
+        
+        .contact-icon i {
+            font-size: 2rem;
+        }
+        
+        .contact-item {
+            margin-bottom: 1rem;
+        }
+        
+        .effective-date {
+            border: 2px solid var(--primary-color);
+            background: rgba(102, 126, 234, 0.05);
+        }
+
+        .policy-highlight {
+            background: linear-gradient(135deg, rgba(40, 167, 69, 0.1), rgba(40, 167, 69, 0.05));
+            border-left: 4px solid #28a745;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .policy-info {
+            background: linear-gradient(135deg, rgba(23, 162, 184, 0.1), rgba(23, 162, 184, 0.05));
+            border-left: 4px solid #17a2b8;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .policy-digital {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(102, 126, 234, 0.05));
+            border-left: 4px solid #667eea;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .digital-feature {
+            background: rgba(102, 126, 234, 0.05);
+            border: 2px solid rgba(102, 126, 234, 0.1);
+        }
+
+        .reward-card {
+            background: linear-gradient(135deg, rgba(255, 193, 7, 0.1), rgba(255, 193, 7, 0.05));
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--primary-color);
+            border-radius: 50%;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 1.2rem;
+            bottom: -1rem;
+            width: 2px;
+            background: rgba(102, 126, 234, 0.2);
+        }
+
+        .timeline-item:last-child::after {
+            display: none;
+        }
+
+        .delivery-steps {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(102, 126, 234, 0.02));
+            border: 2px solid rgba(102, 126, 234, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-modern fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="brand-container">
+                    <div class="brand-icon">
+                        <i class="bi bi-controller"></i>
+                    </div>
+                    <span class="brand-text">Win80x</span>
+                </div>
+            </a>
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="btn btn-primary btn-navbar rounded-pill px-4 py-2">
+                    <i class="bi bi-house-door me-2"></i>Back to Home
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Shipping Policy Content -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <!-- Header -->
+                    <div class="text-center mb-5">
+                        <div class="section-badge mb-3">
+                            <span class="badge bg-info text-white px-3 py-2 rounded-pill">
+                                <i class="bi bi-truck me-2"></i>Shipping & Delivery
+                            </span>
+                        </div>
+                        <h1 class="display-5 fw-bold mb-4">Shipping Policy</h1>
+                        <p class="lead text-muted">Digital delivery system for virtual tokens and rewards</p>
+                        <div class="effective-date rounded-4 p-3 d-inline-block">
+                            <small class="text-muted fw-medium">
+                                <i class="bi bi-calendar-event me-2"></i>
+                                Effective Date: July 24, 2025
+                            </small>
+                        </div>
+                    </div>
+
+                    <!-- Content Card -->
+                    <div class="card border-0 shadow-lg">
+                        <div class="card-body p-5">
+                            <!-- Introduction -->
+                            <div class="intro-section mb-5">
+                                <div class="d-flex align-items-start mb-4">
+                                    <div class="icon-wrapper me-3">
+                                        <i class="bi bi-globe text-info"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-2">Digital Gaming Platform</h5>
+                                        <p class="text-muted mb-0">
+                                            <strong>Win80x</strong> is an online gaming platform that provides virtual tokens 
+                                            for gameplay and digital rewards. Our primary focus is digital delivery with 
+                                            no physical goods shipped from our platform under normal circumstances.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Platform Overview -->
+                            <div class="row mb-5">
+                                <div class="col-md-4">
+                                    <div class="digital-feature text-center p-4 h-100 rounded-4">
+                                        <i class="bi bi-laptop text-primary fs-1 mb-3"></i>
+                                        <h6 class="fw-bold">100% Digital</h6>
+                                        <small class="text-muted">Virtual gaming platform</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="digital-feature text-center p-4 h-100 rounded-4">
+                                        <i class="bi bi-lightning-charge text-warning fs-1 mb-3"></i>
+                                        <h6 class="fw-bold">Instant Delivery</h6>
+                                        <small class="text-muted">Immediate token credit</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="digital-feature text-center p-4 h-100 rounded-4">
+                                        <i class="bi bi-shield-check text-success fs-1 mb-3"></i>
+                                        <h6 class="fw-bold">Secure System</h6>
+                                        <small class="text-muted">Protected transactions</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Policy Sections -->
+                            <div class="shipping-content">
+                                <div class="shipping-section mb-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="section-number me-3">
+                                            <span class="badge bg-primary text-white rounded-circle">1</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-bold mb-4 text-primary">Token Delivery System</h4>
+                                            
+                                            <div class="policy-digital p-4 mb-4">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <i class="bi bi-coin text-primary me-3 fs-4"></i>
+                                                    <h6 class="fw-bold mb-0 text-primary">Virtual Token Delivery</h6>
+                                                </div>
+                                                <p class="text-muted mb-0">
+                                                    Once a user purchases tokens, they are delivered <strong>instantly</strong> to their 
+                                                    in-game wallet upon successful payment confirmation. Users can view their updated 
+                                                    token balance under their account dashboard.
+                                                </p>
+                                            </div>
+
+                                            <h6 class="fw-bold mb-3">Token Delivery Process:</h6>
+                                            <div class="delivery-steps p-4 rounded-4">
+                                                <div class="timeline-container">
+                                                    <div class="timeline-item mb-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-credit-card text-primary me-2"></i>
+                                                            <span class="fw-medium">Payment Processing</span>
+                                                        </div>
+                                                        <small class="text-muted">Secure payment via Razorpay gateway</small>
+                                                    </div>
+                                                    <div class="timeline-item mb-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-check-circle text-success me-2"></i>
+                                                            <span class="fw-medium">Payment Confirmation</span>
+                                                        </div>
+                                                        <small class="text-muted">Transaction verified and approved</small>
+                                                    </div>
+                                                    <div class="timeline-item mb-3">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-lightning text-warning me-2"></i>
+                                                            <span class="fw-medium">Instant Credit</span>
+                                                        </div>
+                                                        <small class="text-muted">Tokens immediately added to wallet</small>
+                                                    </div>
+                                                    <div class="timeline-item">
+                                                        <div class="d-flex align-items-center">
+                                                            <i class="bi bi-person-check text-info me-2"></i>
+                                                            <span class="fw-medium">Dashboard Update</span>
+                                                        </div>
+                                                        <small class="text-muted">Updated balance visible in account</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3 mt-4">
+                                                <div class="col-md-6">
+                                                    <div class="d-flex align-items-center p-3 bg-light rounded-3">
+                                                        <i class="bi bi-clock text-primary me-3"></i>
+                                                        <div>
+                                                            <h6 class="mb-0">Delivery Time</h6>
+                                                            <small class="text-muted">Instant (0 seconds)</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="d-flex align-items-center p-3 bg-light rounded-3">
+                                                        <i class="bi bi-currency-rupee text-primary me-3"></i>
+                                                        <div>
+                                                            <h6 class="mb-0">Delivery Cost</h6>
+                                                            <small class="text-muted">Free (No charges)</small>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="shipping-section mb-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="section-number me-3">
+                                            <span class="badge bg-warning text-dark rounded-circle">2</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-bold mb-4 text-warning">Physical Reward Distribution</h4>
+                                            
+                                            <div class="alert alert-info" role="alert">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-info-circle me-3 fs-4"></i>
+                                                    <div>
+                                                        <h6 class="fw-bold mb-1">Special Occasions Only</h6>
+                                                        <p class="mb-0">Physical rewards are distributed only during special promotions and contests.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="reward-card p-4 rounded-4 mb-4">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-gift-fill text-warning me-3 fs-4"></i>
+                                                    <div>
+                                                        <h6 class="fw-bold mb-2">Winner Contact Process</h6>
+                                                        <p class="text-muted mb-3">
+                                                            In cases where users win redeemable physical rewards, our team will contact 
+                                                            the winners via registered email or phone for address confirmation.
+                                                        </p>
+                                                        <div class="row g-3">
+                                                            <div class="col-md-6">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i class="bi bi-envelope text-primary me-2"></i>
+                                                                    <span class="fw-medium">Email Contact</span>
+                                                                </div>
+                                                                <small class="text-muted">Registered email address</small>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="d-flex align-items-center">
+                                                                    <i class="bi bi-telephone text-primary me-2"></i>
+                                                                    <span class="fw-medium">Phone Verification</span>
+                                                                </div>
+                                                                <small class="text-muted">Registered phone number</small>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <h6 class="fw-bold mb-3">Physical Reward Timeline:</h6>
+                                            <div class="timeline-container">
+                                                <div class="timeline-item mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="bi bi-trophy text-warning me-2"></i>
+                                                        <span class="fw-medium">Win Physical Reward</span>
+                                                    </div>
+                                                    <small class="text-muted">Contest or promotion winner announced</small>
+                                                </div>
+                                                <div class="timeline-item mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="bi bi-person-lines-fill text-info me-2"></i>
+                                                        <span class="fw-medium">Contact & Verification</span>
+                                                    </div>
+                                                    <small class="text-muted">Team contacts winner for address confirmation</small>
+                                                </div>
+                                                <div class="timeline-item mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="bi bi-box-seam text-primary me-2"></i>
+                                                        <span class="fw-medium">Processing & Packaging</span>
+                                                    </div>
+                                                    <small class="text-muted">Reward prepared for dispatch</small>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="bi bi-truck text-success me-2"></i>
+                                                        <span class="fw-medium">Dispatch</span>
+                                                    </div>
+                                                    <small class="text-muted">Delivered within 7-10 working days</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="policy-highlight p-4 mt-4">
+                                                <div class="d-flex align-items-center">
+                                                    <i class="bi bi-calendar-range text-success me-3 fs-4"></i>
+                                                    <div>
+                                                        <h6 class="fw-bold mb-1 text-success">Delivery Timeframe</h6>
+                                                        <p class="text-muted mb-0">
+                                                            Physical dispatches, if applicable, will be made within <strong>7-10 working days</strong> 
+                                                            after address confirmation.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="shipping-section mb-5">
+                                    <div class="d-flex align-items-start">
+                                        <div class="section-number me-3">
+                                            <span class="badge bg-success text-white rounded-circle">3</span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-bold mb-4 text-success">Shipping Charges</h4>
+                                            
+                                            <div class="policy-highlight p-4 mb-4">
+                                                <div class="d-flex align-items-center mb-3">
+                                                    <i class="bi bi-cash-coin text-success me-3 fs-4"></i>
+                                                    <h6 class="fw-bold mb-0 text-success">Zero Shipping Charges</h6>
+                                                </div>
+                                                <p class="text-muted mb-0">
+                                                    Currently, there are <strong>no shipping charges</strong> for virtual items. 
+                                                    Any physical item dispatch (if offered in promotions) will be handled 
+                                                    <strong>without additional charges</strong>.
+                                                </p>
+                                            </div>
+
+                                            <div class="row g-4">
+                                                <div class="col-md-6">
+                                                    <div class="text-center p-4 bg-light rounded-4">
+                                                        <i class="bi bi-coin text-primary fs-1 mb-3"></i>
+                                                        <h6 class="fw-bold">Virtual Tokens</h6>
+                                                        <div class="badge bg-success text-white rounded-pill px-3 py-2">
+                                                            ₹0 Delivery Fee
+                                                        </div>
+                                                        <small class="text-muted d-block mt-2">Instant digital delivery</small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="text-center p-4 bg-light rounded-4">
+                                                        <i class="bi bi-gift text-warning fs-1 mb-3"></i>
+                                                        <h6 class="fw-bold">Physical Rewards</h6>
+                                                        <div class="badge bg-success text-white rounded-pill px-3 py-2">
+                                                            ₹0 Shipping Fee
+                                                        </div>
+                                                        <small class="text-muted d-block mt-2">Free promotional delivery</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="policy-info p-4 mt-4">
+                                                <div class="d-flex align-items-start">
+                                                    <i class="bi bi-info-circle text-info me-3 fs-4"></i>
+                                                    <div>
+                                                        <h6 class="fw-bold mb-2 text-info">Coverage Areas</h6>
+                                                        <ul class="list-unstyled mb-0">
+                                                            <li class="mb-2">
+                                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                                <strong>Virtual Delivery:</strong> Worldwide (instant)
+                                                            </li>
+                                                            <li class="mb-2">
+                                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                                <strong>Physical Rewards:</strong> India (selected cities)
+                                                            </li>
+                                                            <li>
+                                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                                <strong>International:</strong> Case-by-case basis
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Contact Section -->
+                                <div class="contact-section bg-light rounded-4 p-4">
+                                    <div class="d-flex align-items-start">
+                                        <div class="contact-icon me-3">
+                                            <i class="bi bi-headset text-primary"></i>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h4 class="fw-bold mb-3 text-primary">Delivery Support</h4>
+                                            <p class="text-muted mb-4">
+                                                For any shipping or delivery-related queries, including token delivery issues 
+                                                or physical reward inquiries, please contact our support team.
+                                            </p>
+                                            <div class="row g-3">
+                                                <div class="col-md-6">
+                                                    <div class="contact-item">
+                                                        <i class="bi bi-envelope-fill text-muted me-2"></i>
+                                                        <span class="fw-medium">Email:</span>
+                                                        <a href="mailto:support@win80x.com" class="text-primary text-decoration-none">support@win80x.com</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="contact-item">
+                                                        <i class="bi bi-telephone-fill text-muted me-2"></i>
+                                                        <span class="fw-medium">Phone:</span>
+                                                        <a href="tel:+917536007536" class="text-primary text-decoration-none">+91-7536007536</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="contact-item">
+                                                        <i class="bi bi-globe text-muted me-2"></i>
+                                                        <span class="fw-medium">Website:</span>
+                                                        <a href="index.html" class="text-primary text-decoration-none">www.win80x.com</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="text-center mt-5">
+                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
+                            <a href="index.html" class="btn btn-primary btn-lg px-5 py-3 rounded-pill">
+                                <i class="bi bi-house-door me-2"></i>Return to Home
+                            </a>
+                            <a href="terms-and-conditions.html" class="btn btn-outline-primary btn-lg px-5 py-3 rounded-pill">
+                                <i class="bi bi-file-text me-2"></i>Terms & Conditions
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0 text-light">
+                        <i class="bi bi-controller me-2"></i>
+                        &copy; 2025 Win80x. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="text-light">Made with ❤️ for gamers worldwide</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

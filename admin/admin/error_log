@@ -1,0 +1,82 @@
+[28-Nov-2024 12:07:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'beatlebuddy_85times_user'@'localhost' (using password: YES) in /home/win80x/public_html/admin/create_game.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/create_game.php(9): mysqli->__construct('localhost', 'beatlebuddy_85t...', Object(SensitiveParameterValue), 'beatlebuddy_80t...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/create_game.php on line 9
+[28-Nov-2024 12:08:49 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'beatlebuddy_85times_user'@'localhost' (using password: YES) in /home/win80x/public_html/admin/create_game.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/create_game.php(9): mysqli->__construct('localhost', 'beatlebuddy_85t...', Object(SensitiveParameterValue), 'beatlebuddy_80t...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/create_game.php on line 9
+[28-Nov-2024 12:14:28 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'beatlebuddy_85times_user'@'localhost' (using password: YES) in /home/win80x/public_html/admin/create_game.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/create_game.php(9): mysqli->__construct('localhost', 'beatlebuddy_85t...', Object(SensitiveParameterValue), 'beatlebuddy_80t...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/create_game.php on line 9
+[28-Nov-2024 12:18:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'beatlebuddy_85times_user'@'localhost' (using password: YES) in /home/win80x/public_html/admin/users.php:77
+Stack trace:
+#0 /home/win80x/public_html/admin/users.php(77): mysqli->__construct('localhost', 'beatlebuddy_85t...', Object(SensitiveParameterValue), 'beatlebuddy_80t...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/users.php on line 77
+[04-Jun-2025 07:09:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'result_declared' in 'SELECT' in /home/win80x/public_html/admin/admin/declare_result.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/declare_result.php(9): mysqli->query('SELECT id, game...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/declare_result.php on line 9
+[04-Jun-2025 07:10:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'result_declared' in 'SELECT' in /home/win80x/public_html/admin/admin/declare_result.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/declare_result.php(9): mysqli->query('SELECT id, game...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/declare_result.php on line 9
+[04-Jun-2025 07:15:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'lucky_number' in 'INSERT INTO' in /home/win80x/public_html/admin/admin/submit_declare_result.php:61
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/submit_declare_result.php(61): mysqli->prepare('INSERT INTO gam...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 61
+[05-Jun-2025 12:57:48 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 156
+[05-Jun-2025 12:57:48 UTC] PHP Warning:  file_get_contents(https://exp.host/--/api/v2/push/send): Failed to open stream: no suitable wrapper could be found in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 156
+[05-Jun-2025 12:57:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/admin/admin/submit_declare_result.php:156) in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 166
+[05-Jun-2025 13:00:28 UTC] PHP Warning:  file_get_contents(): https:// wrapper is disabled in the server configuration by allow_url_fopen=0 in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 156
+[05-Jun-2025 13:00:28 UTC] PHP Warning:  file_get_contents(https://exp.host/--/api/v2/push/send): Failed to open stream: no suitable wrapper could be found in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 156
+[05-Jun-2025 13:00:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/admin/admin/submit_declare_result.php:156) in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 166
+[05-Jun-2025 13:07:51 UTC] PHP Fatal error:  Uncaught Error: Class "mysqli" not found in /home/win80x/public_html/admin/connection.php:9
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/declare_result.php(6): include()
+#1 {main}
+  thrown in /home/win80x/public_html/admin/connection.php on line 9
+[05-Jun-2025 13:19:23 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'description' in 'INSERT INTO' in /home/win80x/public_html/admin/admin/submit_declare_result.php:88
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/submit_declare_result.php(88): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 88
+[05-Jun-2025 13:24:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'description' in 'INSERT INTO' in /home/win80x/public_html/admin/admin/submit_declare_result.php:88
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/submit_declare_result.php(88): mysqli->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 88
+[06-Jun-2025 05:51:47 UTC] PHP Warning:  Undefined variable $game_name in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 165
+[06-Jun-2025 05:51:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/admin/admin/submit_declare_result.php:165) in /home/win80x/public_html/admin/admin/submit_declare_result.php on line 203
+[19-Jul-2025 08:56:43 UTC] PHP Warning:  Undefined array key "transaction_id" in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 121
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 122
+[19-Jul-2025 09:18:56 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/win80x/public_html/admin/admin/withdrawal_requests.php on line 123
+[19-Jul-2025 09:40:02 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''pending' at line 1 in /home/win80x/public_html/admin/admin/index.php:67
+Stack trace:
+#0 /home/win80x/public_html/admin/admin/index.php(67): mysqli->query('SELECT COUNT(*)...')
+#1 {main}
+  thrown in /home/win80x/public_html/admin/admin/index.php on line 67

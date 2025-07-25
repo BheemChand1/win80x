@@ -1,0 +1,21 @@
+[28-Nov-2024 12:03:37 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/index.php:2) in /home/win80x/public_html/index.php on line 45
+[28-Nov-2024 12:03:48 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/index.php:2) in /home/win80x/public_html/index.php on line 45
+[28-Nov-2024 12:04:54 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/index.php:2) in /home/win80x/public_html/index.php on line 45
+[28-Nov-2024 12:07:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/index.php:2) in /home/win80x/public_html/index.php on line 45
+[28-Nov-2024 12:16:10 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/win80x/public_html/index.php:2) in /home/win80x/public_html/index.php on line 45
+[28-Nov-2024 17:25:07 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[28-Nov-2024 17:25:07 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[28-Nov-2024 18:39:16 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[28-Nov-2024 18:39:16 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[28-Nov-2024 19:17:09 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[28-Nov-2024 19:17:09 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[28-Nov-2024 19:45:14 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[28-Nov-2024 19:45:14 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[28-Nov-2024 22:13:24 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[28-Nov-2024 22:13:24 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[29-Nov-2024 00:13:34 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[29-Nov-2024 00:13:34 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[29-Nov-2024 07:17:56 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[29-Nov-2024 07:17:56 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33
+[29-Nov-2024 09:48:00 UTC] PHP Warning:  Undefined array key "username" in /home/win80x/public_html/index.php on line 32
+[29-Nov-2024 09:48:00 UTC] PHP Warning:  Undefined array key "password" in /home/win80x/public_html/index.php on line 33

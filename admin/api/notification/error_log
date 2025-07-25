@@ -1,0 +1,36 @@
+[04-Jun-2025 09:02:28 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[04-Jun-2025 09:02:28 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[04-Jun-2025 09:02:49 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[04-Jun-2025 09:02:49 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[05-Jun-2025 08:51:53 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[05-Jun-2025 08:51:53 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[05-Jun-2025 08:51:59 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[05-Jun-2025 08:51:59 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:03 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:03 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:17 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:17 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:17 UTC] PHP Warning:  Undefined variable $conn in /home/win80x/public_html/admin/api/notification/token.php on line 45
+[06-Jun-2025 07:03:17 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_begin_transaction(): Argument #1 ($mysql) must be of type mysqli, null given in /home/win80x/public_html/admin/api/notification/token.php:45
+Stack trace:
+#0 /home/win80x/public_html/admin/api/notification/token.php(45): mysqli_begin_transaction(NULL)
+#1 {main}
+  thrown in /home/win80x/public_html/admin/api/notification/token.php on line 45
+[06-Jun-2025 07:03:37 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:37 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:37 UTC] PHP Warning:  Undefined variable $conn in /home/win80x/public_html/admin/api/notification/token.php on line 45
+[06-Jun-2025 07:03:37 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_begin_transaction(): Argument #1 ($mysql) must be of type mysqli, null given in /home/win80x/public_html/admin/api/notification/token.php:45
+Stack trace:
+#0 /home/win80x/public_html/admin/api/notification/token.php(45): mysqli_begin_transaction(NULL)
+#1 {main}
+  thrown in /home/win80x/public_html/admin/api/notification/token.php on line 45
+[06-Jun-2025 07:03:45 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:45 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:52 UTC] PHP Warning:  include(../connection.php): Failed to open stream: No such file or directory in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:52 UTC] PHP Warning:  include(): Failed opening '../connection.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/win80x/public_html/admin/api/notification/token.php on line 2
+[06-Jun-2025 07:03:52 UTC] PHP Warning:  Undefined variable $conn in /home/win80x/public_html/admin/api/notification/token.php on line 45
+[06-Jun-2025 07:03:52 UTC] PHP Fatal error:  Uncaught TypeError: mysqli_begin_transaction(): Argument #1 ($mysql) must be of type mysqli, null given in /home/win80x/public_html/admin/api/notification/token.php:45
+Stack trace:
+#0 /home/win80x/public_html/admin/api/notification/token.php(45): mysqli_begin_transaction(NULL)
+#1 {main}
+  thrown in /home/win80x/public_html/admin/api/notification/token.php on line 45
