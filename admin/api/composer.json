@@ -1,6 +1,7 @@
 {
     "require": {
         "razorpay/razorpay": "^2.9",
-        "firebase/php-jwt": "^6.11"
+        "firebase/php-jwt": "^6.11",
+        "phpmailer/phpmailer": "^6.10"
     }
 }
